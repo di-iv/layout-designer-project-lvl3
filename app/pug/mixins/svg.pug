@@ -1,0 +1,3 @@
+mixin svg(id, size, height= size)
+  svg(width= size height= height class!=attributes.class fill='currentColor')
+    use(href=`./sprite.svg#${id}`)
