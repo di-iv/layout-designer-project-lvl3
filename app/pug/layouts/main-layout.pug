@@ -6,5 +6,9 @@ html(lang="ru")
     link(href="./index.css", rel="stylesheet")
     title Hexlet Chat
   body
-    .container-xxl
-      block main
+    .container-xxl.vh-100.p-4
+      .row.bg-light.rounded.h-100.overflow-hidden
+        .col-4.h-100.border-end
+          block left
+        .col-8
+          block right
