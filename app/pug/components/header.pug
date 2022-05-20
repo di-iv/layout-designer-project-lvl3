@@ -1,0 +1,18 @@
+include ../mixins/svg
+
+header
+  .d-flex.justify-content-between.bg-primary.text-light.p-4
+    a(href="/").text-light
+      +svg('logo', '15px', '25px')
+    nav.ms-4
+      ul.nav
+        li.me-4
+          +svg('people', '25px')(class="me-2")
+          span Контакты
+        li.me-4
+          +svg('chat', '25px')(class="me-2")
+          span Сообщения
+        li
+          +svg('person', '25px')(class="me-2")
+          span Профиль
+
