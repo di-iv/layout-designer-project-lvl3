@@ -11,4 +11,12 @@ $utilities: (
       50px: 50px,
     )
   ),
+  "rounded-responsive": (
+    property: border-radius,
+    class: rounded,
+    responsive: true,
+    values: (
+      null: $border-radius,
+    )
+  ),
 )
