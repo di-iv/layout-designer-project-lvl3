@@ -1,0 +1,12 @@
+.contact {
+  transition: background 0.5s;
+  &__user-name, &__user-status {
+    transition: color 0.15s;
+  }
+  &:hover {
+    background: $primary;
+    .contact__user-name, .contact__user-status {
+      color: $light;
+    }
+  }
+}

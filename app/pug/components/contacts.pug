@@ -1,0 +1,13 @@
+include ../data/contacts.js.pug
+
+.p-4.py-5.h-100.hide-scrollbar
+  h2.fw-bold.text-dark Контакты
+  input.form-control.border-0.border-bottom.px-4.py-3.mb-5(type="text" placeholder="Поиск по контактам")
+  each users, letter in contacts
+    h6.text-secondary.mb-3 #{letter}
+    each user in users
+      a.contact.d-flex.align-items-center.shadow-sm.p-3.mb-5.text-decoration-none(href="#")
+        img.contact__image.rounded-circle.w-50px.h-100.me-4(src= user.avatar alt="avatar")
+        .contact__user
+          h6.contact__user-name.text-dark.fw-bold.mb-0 #{user.name}
+          p.contact__user-status.text-secondary.mb-0 #{user.status}
